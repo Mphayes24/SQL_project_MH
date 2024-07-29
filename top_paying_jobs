@@ -1,4 +1,3 @@
---Top 10 highest paying data analyst roles that are either remote or local
 SELECT
 	job_id,
 	job_title,
@@ -9,7 +8,6 @@ SELECT
 	-- name AS company_name
 FROM
 	job_postings_fact
--- LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
 WHERE
 	job_title = 'Data Analyst'
 	AND salary_year_avg IS NOT NULL
